@@ -5,7 +5,7 @@ In this edition of the **migrating React app to server-side rendering (Next.js) 
 ### Improved UX/Speed 🏎
 The first argument which favours using SSR is the improved page speed. 
 
-If you navigate to a single-page application in your browser, 
+If you navigate to a single-page application in your browser, the browser will first fire a request to download the HTML and JavaScript, and only after the JavaScript is downloaded and evaluated, it can fire additional request to fetch some data from your API. Meanwhile, the user is presented with a 
 you save a roundtrip if you recall the image from the previous blog post (link)
 there is no spinner / white screen
 many platforms can benefit from SSG rather
@@ -22,6 +22,6 @@ However, this is no longer the case, at least with the Google crawler as it wait
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTk5ODg5NCwtMTIzMzUzNDEzOSwxMz
+eyJoaXN0b3J5IjpbMTczNTMzNDA0OCwtMTIzMzUzNDEzOSwxMz
 U3OTQ2NjQ5XX0=
 -->
