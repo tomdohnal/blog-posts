@@ -13,9 +13,9 @@ e-commerce sites in an extremely competitve environments are the ones which bene
 ### Better for SEO (controversial 🧐)
 I've seen the SEO argument being used countless times, but frankly, I don't believe it is such a big deal. Let's first clarify why some people even make the claim that it's a big deal.
 
-The way Google (and other) crawlers (which are scraping your website to display it in the search results) has *traditionally* worked is following: Visit a website, read the HTML delivered from the server/CDN, save it. Problems arised as libraries like React or Vue came into existence. As described in [the previous blog post](https://dev.to/tomdohnal/migrating-to-ssr-next-js-part-1-3-what-is-ssr-and-how-it-differs-from-other-approaches-50fa), almost no HTML is received in the first response from the server/CDN. It's only after the necessary part of JavaScript gets executed that you can see some meaningful content.
+The way Google (and other) crawlers (which are scraping your website to display it in the search results) has *traditionally* worked is following: Visit a website, read the HTML delivered from the server/CDN, save it. Problems arised as libraries like React or Vue came into existence. As described in [the previous blog post](https://dev.to/tomdohnal/migrating-to-ssr-next-js-part-1-3-what-is-ssr-and-how-it-differs-from-other-approaches-50fa), almost no HTML is received in the first response from the server/CDN. It's only after the necessary part of JavaScript gets executed that you can see some meaningful content. Lolaa.
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1Nzk0NjY0OV19
+eyJoaXN0b3J5IjpbMTE3MDc0MDM5NCwxMzU3OTQ2NjQ5XX0=
 -->
