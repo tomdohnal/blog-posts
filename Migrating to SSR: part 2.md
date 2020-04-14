@@ -15,10 +15,11 @@ I've seen the SEO argument being used countless times, but frankly, I don't beli
 
 The way Google (and other) crawlers (which are scraping your website to display it in the search results) has *traditionally* worked is following: Visit a website, read the HTML delivered from the server/CDN, save it. Problems arised as libraries like React or Vue came into existence. As described in [the previous blog post](https://dev.to/tomdohnal/migrating-to-ssr-next-js-part-1-3-what-is-ssr-and-how-it-differs-from-other-approaches-50fa), almost no HTML is received in the first response from the server/CDN. It's only after the necessary part of JavaScript gets executed that you can see some meaningful content. And that's the root of the SEO problem -- crawlers would only see the one div or a spinner and wouldn't wait for the actual content to show up. Therefore, your page wouldn't get properly indexed.
 
-However, this is no longer the case, at least with the Google crawler. Where it might still be *necessary* is when you want to get a nice preview of your page when sharing to Facebook, Twiter etc. But if this would be your only concern, I think *prerendering
+However, this is no longer the case, at least with the Google crawler. Where it might still be *necessary* is when you want to get a nice preview of your page when sharing to Facebook, Twiter etc. But if this would be your only concern, I think *prerendering* using a tool like [react-snap](https://github.com/stereobooster/react-snap) might be a better solution.
+> You may *still* get some SEO improvements by using SSR even for crawler like G
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwNTg4OTYwLC0xMjMzNTM0MTM5LDEzNT
-c5NDY2NDldfQ==
+eyJoaXN0b3J5IjpbLTg5MzYyNzA3NCwtMTIzMzUzNDEzOSwxMz
+U3OTQ2NjQ5XX0=
 -->
