@@ -9,7 +9,7 @@ If you navigate to a single-page application in your browser, the browser will f
 
 When you visit a website which uses SSR, the browser will fire a request, but, unlike with SPAs, the response contains all you need -- JavaScript files, HTML content *and* your data. **There are no spinners, skeletons -- no elements jumping around. The content is delivered faster, the time to the first paint improves.**
 
-However, like with every other tool, it might be an overkill for your usecase. Think about if improving your page load by a couple of hundreds milliseconds is worth i
+However, like with every other tool, it might be an overkill for your usecase. Think about if improving your page load by a couple of hundreds milliseconds is worth it. It might be crucial in for e-commerce sites (which are in an extremely competitive environment), but might be an overkill for application
 
 many platforms can benefit from SSG rather
 only where it matters (if the content is behind a login gate, not so much)
@@ -25,6 +25,6 @@ However, this is no longer the case, at least with the Google crawler as it wait
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4OTAyMTQ2OSwtMTIzMzUzNDEzOSwxMz
-U3OTQ2NjQ5XX0=
+eyJoaXN0b3J5IjpbLTEyMjk5NDQxNTAsLTEyMzM1MzQxMzksMT
+M1Nzk0NjY0OV19
 -->
