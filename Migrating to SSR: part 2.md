@@ -13,9 +13,11 @@ e-commerce sites in an extremely competitve environments are the ones which bene
 ### Better for SEO (controversial 🧐)
 I've seen the SEO argument being used countless times, but frankly, I don't believe it is such a big deal. Let's first clarify why some people even make the claim that it's a big deal.
 
-The way Google (and other) crawlers (which are scraping your website to display it in the search results) has *traditionally* worked is following: Visit a website, read the HTML delivered from the server/CDN, save it. Problems arised as libraries like React or Vue came into existence. As described in [the previous blog post](https://dev.to/tomdohnal/migrating-to-ssr-next-js-part-1-3-what-is-ssr-and-how-it-differs-from-other-approaches-50fa), almost no HTML is received in the first response from the server/CDN. It's only after the necessary part of JavaScript gets executed that you can see some meaningful content. And that's the root of the SEO problem -- crawlers would only see the one div or a spinner and wouldn't 
+The way Google (and other) crawlers (which are scraping your website to display it in the search results) has *traditionally* worked is following: Visit a website, read the HTML delivered from the server/CDN, save it. Problems arised as libraries like React or Vue came into existence. As described in [the previous blog post](https://dev.to/tomdohnal/migrating-to-ssr-next-js-part-1-3-what-is-ssr-and-how-it-differs-from-other-approaches-50fa), almost no HTML is received in the first response from the server/CDN. It's only after the necessary part of JavaScript gets executed that you can see some meaningful content. And that's the root of the SEO problem -- crawlers would only see the one div or a spinner and wouldn't wait for the actual content to show up. Therefore, your page wouldn't get properly indexed.
+
+However, this is no longer the case, at least with the Google crawler. 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMjk3MzM0OSwxMzU3OTQ2NjQ5XX0=
+eyJoaXN0b3J5IjpbLTEyMzM1MzQxMzksMTM1Nzk0NjY0OV19
 -->
