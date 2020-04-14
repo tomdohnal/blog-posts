@@ -7,9 +7,8 @@ The first argument which favours using SSR is the improved page speed.
 
 If you navigate to a single-page application in your browser, the browser will first fire a request to download the HTML and JavaScript, and only after the JavaScript is downloaded and evaluated, it can fire additional request to fetch some data from your API. Meanwhile, the user is presented with a blank screen, spinners or skeletons. 
 
-When you visit a website which uses SSR, the browser will fire a request, but, unlike with SPAs, the response i
-you save a roundtrip if you recall the image from the previous blog post (link)
-there is no spinner / white screen
+When you visit a website which uses SSR, the browser will fire a request, but, unlike with SPAs, the response contains all you need -- JavaScript files, HTML content *and* your data. There are no spinners, skeletons, no waiting for the data to be fetched. Your 
+
 many platforms can benefit from SSG rather
 only where it matters (if the content is behind a login gate, not so much)
 e-commerce sites in an extremely competitve environments are the ones which benefit the most
@@ -24,6 +23,6 @@ However, this is no longer the case, at least with the Google crawler as it wait
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzkyNzQzNCwtMTIzMzUzNDEzOSwxMz
-U3OTQ2NjQ5XX0=
+eyJoaXN0b3J5IjpbLTE5OTIyOTAwODMsLTEyMzM1MzQxMzksMT
+M1Nzk0NjY0OV19
 -->
