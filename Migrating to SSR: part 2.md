@@ -11,10 +11,10 @@ When you visit a website which uses SSR, the browser will fire a request, but, u
 
 However, like with every other tool, it might be an overkill for your usecase. Think about if improving your page load by a couple of hundreds milliseconds is worth it. **It might be crucial in for e-commerce sites (which are in an extremely competitive** environment), **but might be an overkill for application which are only usable after loggin in**
 
-Wi
+With the growing popularity of the [JAM Stack](https://jamstack.org/), you can get similar benefits in terms of speed for pages which don't e
 
 many platforms can benefit from SSG rather
-only where it matters (if the content is behind a login gate, not so much)
+
 
 ### Better for SEO (controversial 🧐)
 I've seen the SEO argument being used countless times, but frankly, I don't believe it is such a big deal. Let's first clarify why some people even make the claim that it's a big deal.
@@ -26,6 +26,6 @@ However, this is no longer the case, at least with the Google crawler as it wait
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzOTE1NTU5NCwtMTIzMzUzNDEzOSwxMz
+eyJoaXN0b3J5IjpbMTMwMjk5NTU4OCwtMTIzMzUzNDEzOSwxMz
 U3OTQ2NjQ5XX0=
 -->
