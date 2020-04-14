@@ -1,4 +1,4 @@
-# Migrating to SSR (Next.js) - part 2/3: WHAT ARE PROS AND CONS OF SSR?
+# Migrating to SSR (Next.js) - part 2/3: IS IT EVEN WORTH IT? 💎
 In this edition of the **migrating React app to server-side rendering (Next.js) mini-series** we'll explore the pros and cons of server-side rendering as opposed to "client-only" single-page apps (and statically generated sites). We'll go through the UX, business, and product development perspectives. **You'll learn when you should opt for server-side rendering, when statically generated sites are a better choice and under which circumstances you'll be better off with a "basic" SPA.**
 
 ## What are the pros of SSR? 👍🏽
@@ -27,6 +27,6 @@ Where it might still be *necessary* is when you want to get a nice preview of yo
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5OTU0NzcwMSwtMTIzMzUzNDEzOSwxMz
-U3OTQ2NjQ5XX0=
+eyJoaXN0b3J5IjpbLTExMDM4Mzc2NzUsLTEyMzM1MzQxMzksMT
+M1Nzk0NjY0OV19
 -->
