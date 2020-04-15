@@ -26,10 +26,11 @@ Where it might still be *necessary* is when you want to get a nice preview of yo
 > You may *still* get some SEO improvements by using SSR even for crawlers which wait until all the content loads up. Indirectly -- **if the search ranking algorithm accounts for the page speed** (which should improve when using SSR), **your site should rank higher** in the search results.
 
 ## What are the cons of SSR? 👎🏻
-
+### Server resources consumption
+As opposed to the "traditional" SPAs where you don't even *need* a server to run your code, you need one in order to e
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYzMTU3NTIzLC0xMTAzODM3Njc1LC0xMj
-MzNTM0MTM5LDEzNTc5NDY2NDldfQ==
+eyJoaXN0b3J5IjpbLTI4MDI3MDA4MSwtMTEwMzgzNzY3NSwtMT
+IzMzUzNDEzOSwxMzU3OTQ2NjQ5XX0=
 -->
