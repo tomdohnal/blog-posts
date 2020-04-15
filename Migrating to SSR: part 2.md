@@ -37,11 +37,11 @@ If you were to roll your own SSR solution, you might be surprised that it's not 
 Of course, if you use frameworks like Next.js or Nuxt.js, they abstract lot of these pain points so that you don't have to worry about them. However, for larger projects which want to start using SSR or which were using SSR before these frameworks existed, the migration process to such a framework might seem daunting and they still need to implement everything by themselves. 
 
 ## Sumary
-In this blog posts, we explored which applications benefit from using SSR and what are the potential downsides. My personal view is that the need for SSR gradually decrease
+In this blog posts, we explored which applications benefit from using SSR and what are the potential downsides. My personal view is that the need for SSR gradually decreases. Especially, with the [newest edition of Next.js](https://nextjs.org/blog/next-9-3).
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NTY5OTIyNywtMTcxNzIyMTEzOSwzNj
-k4MjA4NTksMTI0NDM3OTg2MCwtMTEwMzgzNzY3NSwtMTIzMzUz
-NDEzOSwxMzU3OTQ2NjQ5XX0=
+eyJoaXN0b3J5IjpbLTU3MTU3NTk0LC0xNzE3MjIxMTM5LDM2OT
+gyMDg1OSwxMjQ0Mzc5ODYwLC0xMTAzODM3Njc1LC0xMjMzNTM0
+MTM5LDEzNTc5NDY2NDldfQ==
 -->
