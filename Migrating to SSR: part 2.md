@@ -32,10 +32,10 @@ As opposed to the "traditional" SPAs where you don't even *need* a server to run
 What can you do about it? Well, think about if SSR is the right solution for your usecase. You might be better of leveriging JAM Stack or a traditional SPA can be just enough for your usecase. Or, with the [new 9.3 Next.js release](https://nextjs.org/blog/next-9-3), you can easily combine SSR with static pages which prevents wasting server resources.
 
 ### It's harder for the development (sometimes)
-If you were to roll your own SSR solution, you might be surprised that it's not as straightforward
+If you were to roll your own SSR solution, you might be surprised that it's not as straightforward as creating a "traditional" SPA. If you think about it -- it makes sense. You have to take care to rendering the virtual
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NDM3OTg2MCwtMTEwMzgzNzY3NSwtMT
-IzMzUzNDEzOSwxMzU3OTQ2NjQ5XX0=
+eyJoaXN0b3J5IjpbMjAyNzQzMzQ1OCwxMjQ0Mzc5ODYwLC0xMT
+AzODM3Njc1LC0xMjMzNTM0MTM5LDEzNTc5NDY2NDldfQ==
 -->
