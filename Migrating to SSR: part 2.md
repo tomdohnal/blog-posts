@@ -32,10 +32,10 @@ As opposed to the "traditional" SPAs where you don't even *need* a server to run
 What can you do about it? Well, think about if SSR is the right solution for your usecase. You might be better of leveriging JAM Stack or a traditional SPA can be just enough for your usecase. Or, with the [new 9.3 Next.js release](https://nextjs.org/blog/next-9-3), you can easily combine SSR with static pages which prevents wasting server resources.
 
 ### It's harder for the development (sometimes)
-If you were to roll your own SSR solution, you might be surprised that it's not as straightforward as creating a "traditional" SPA. If you think about it -- it makes sense. You have to take care to rendering the components to HTML, sending them to the browser, hydration
+If you were to roll your own SSR solution, you might be surprised that it's not as straightforward as creating a "traditional" SPA. If you think about it -- it makes sense. You have to take care to rendering the components to HTML, sending them to the browser, [hydration](https://reactjs.org/docs/react-dom.html#hydrate), making sure that you can fetch the data both on the server and the client...
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzI1NTU1NTEsMTI0NDM3OTg2MCwtMT
+eyJoaXN0b3J5IjpbLTE2NjU4ODY2NDUsMTI0NDM3OTg2MCwtMT
 EwMzgzNzY3NSwtMTIzMzUzNDEzOSwxMzU3OTQ2NjQ5XX0=
 -->
