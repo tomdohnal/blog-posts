@@ -25,8 +25,11 @@ The way Google (and other) crawlers (which are scraping your website to display 
 Where it might still be *necessary* is when you want to get a nice preview of your page when sharing to Facebook, Twiter etc. But if this would be your only concern, I think *prerendering* using a tool like [react-snap](https://github.com/stereobooster/react-snap) might be a better solution.
 > You may *still* get some SEO improvements by using SSR even for crawlers which wait until all the content loads up. Indirectly -- **if the search ranking algorithm accounts for the page speed** (which should improve when using SSR), **your site should rank higher** in the search results.
 
+## What are the cons of SSR? 👎🏻
+
+
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDM4Mzc2NzUsLTEyMzM1MzQxMzksMT
-M1Nzk0NjY0OV19
+eyJoaXN0b3J5IjpbNjYzMTU3NTIzLC0xMTAzODM3Njc1LC0xMj
+MzNTM0MTM5LDEzNTc5NDY2NDldfQ==
 -->
