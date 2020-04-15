@@ -34,10 +34,10 @@ What can you do about it? Well, think about if SSR is the right solution for you
 ### It's harder for the development (sometimes)
 If you were to roll your own SSR solution, you might be surprised that it's not as straightforward as creating a "traditional" SPA. If you think about it -- it makes sense. You have to take care to rendering the components to HTML, sending them to the browser, [hydration](https://reactjs.org/docs/react-dom.html#hydrate), making sure that you can fetch the data both on the server and the client...
 
-Of course, if you use frameworks like Next.js or Nuxt.js, they abstract lot of these pain points so that you don't have to worry about them. However, for larger projects which 
+Of course, if you use frameworks like Next.js or Nuxt.js, they abstract lot of these pain points so that you don't have to worry about them. However, for larger projects which want to start using SSR or which were using SSR before these frameworks existed, it can
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTY0NTc3NjUsMTI0NDM3OTg2MCwtMT
-EwMzgzNzY3NSwtMTIzMzUzNDEzOSwxMzU3OTQ2NjQ5XX0=
+eyJoaXN0b3J5IjpbMzY5ODIwODU5LDEyNDQzNzk4NjAsLTExMD
+M4Mzc2NzUsLTEyMzM1MzQxMzksMTM1Nzk0NjY0OV19
 -->
