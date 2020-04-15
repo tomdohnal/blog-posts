@@ -29,10 +29,10 @@ Where it might still be *necessary* is when you want to get a nice preview of yo
 ### The need for a server
 As opposed to the "traditional" SPAs where you don't even *need* a server to run your code, you need one in order to render the code on the server (it's called *server* side rendering after all...). What this means is that you have to pay for a server to execute your React.js code. If you already have a server, the resource consumption might go up. 
 
-What can you do about it? Well, think about if SSR is the right solution for your usecase. You might be better of leveriging JAM Stack or 
+What can you do about it? Well, think about if SSR is the right solution for your usecase. You might be better of leveriging JAM Stack or a traditional SPA can be just enough for your usecase. Or, with the new 9.3 Next.js release, you can combine SSR with static pages which prevents 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODMwMDkyNSwtMTEwMzgzNzY3NSwtMT
-IzMzUzNDEzOSwxMzU3OTQ2NjQ5XX0=
+eyJoaXN0b3J5IjpbLTE2ODg2MjgwNjIsLTExMDM4Mzc2NzUsLT
+EyMzM1MzQxMzksMTM1Nzk0NjY0OV19
 -->
