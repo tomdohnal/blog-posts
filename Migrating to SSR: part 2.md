@@ -19,7 +19,12 @@ However, like with every tool, it might be an overkill for your use-case. Think 
 ### Better for SEO (controversial 🧐)
 I've seen the SEO argument being used countless times, but frankly, I don't believe it is such a big deal all the time. Let's first clarify why some people claim it to be a big deal.
 
-The way Google (and other) crawlers (which are scraping your website to display it in the search results) has *traditionally* worked is following: Visit a website, read the HTML delivered from the server/CDN, save it. Problems arose as libraries like React or Vue came into existence. As described in [the previous blog post](https://dev.to/tomdohnal/migrating-to-ssr-next-js-part-1-3-what-is-ssr-and-how-it-differs-from-other-approaches-50fa), almost no HTML is received in the first response from the server/CDN. It's only after the necessary part of JavaScript gets executed that you can see some meaningful content.
+The way Google (and other) crawlers (which are scraping your website to display it in the search results) has *traditionally* worked is following:
+1) Visit a website
+2) Read the HTML delivered from the server/CDN
+3) Save it.
+
+Problems arose as libraries like React or Vue came into existence. As described in [the previous blog post](https://dev.to/tomdohnal/migrating-to-ssr-next-js-part-1-3-what-is-ssr-and-how-it-differs-from-other-approaches-50fa), almost no HTML is received in the first response from the server/CDN. It's only after the necessary part of JavaScript gets executed that you can see some meaningful content.
 
  **And that's the root of the SEO problem -- crawlers would only see the one div or a spinner and wouldn't wait for the actual content to show up. Therefore, your page wouldn't get properly indexed. However, this is no longer the case with the Google crawler as it waits for all the content to load up.** 
 
@@ -40,8 +45,8 @@ Of course, if you use frameworks like Next.js or Nuxt.js, they abstract a lot of
 ## Summary
 In this blog posts, we explored which applications benefit from using SSR and what are the potential downsides. My personal view is that the need for SSR gradually decreases. Especially, it's really easy to use statically generated sites with [the newest edition of Next.js](https://nextjs.org/blog/next-9-3). Nonetheless, valid use-cases still remain and if you want to learn more about how to create an SSR app, hit the subscribe button and wait a week or two for my next blog post. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NzAxMzQyLC0yMDkzODA0NTIyLC0xMT
-I2ODA0MDgyLC0xNzE3MjIxMTM5LDM2OTgyMDg1OSwxMjQ0Mzc5
-ODYwLC0xMTAzODM3Njc1LC0xMjMzNTM0MTM5LDEzNTc5NDY2ND
-ldfQ==
+eyJoaXN0b3J5IjpbLTEzMDAyNDAwNjMsLTIwOTM4MDQ1MjIsLT
+ExMjY4MDQwODIsLTE3MTcyMjExMzksMzY5ODIwODU5LDEyNDQz
+Nzk4NjAsLTExMDM4Mzc2NzUsLTEyMzM1MzQxMzksMTM1Nzk0Nj
+Y0OV19
 -->
