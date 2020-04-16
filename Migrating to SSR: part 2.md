@@ -1,5 +1,6 @@
+
 # Migrating to SSR (Next.js) - part 2/3: IS IT EVEN WORTH IT? 💎
-In this edition of the **migrating React app to server-side rendering (Next.js) mini-series** we'll explore the pros and cons of server-side rendering as opposed to "client-only" single-page apps (and statically generated sites). We'll go through the UX, business, and product development perspectives. **You'll learn when you should opt for server-side rendering, when statically generated sites are a better choice and under which circumstances you'll be better off with a "basic" SPA.**
+In this edition of the **migrating React app to server-side rendering (Next.js) mini-series** we'll explore the pros and cons of server-side rendering as opposed to "client-only" single-page apps (and statically generated sites). We'll go through the UX, business, and product development perspectives. **You'll learn when you should opt for server-side rendering, when statically generated sites are a better choice, and under which circumstances you'll be better off with a "basic" SPA.**
 
 ## What are the pros of SSR? 👍🏽
 ### Improved UX/Speed 🏎
@@ -9,16 +10,16 @@ If you navigate to a single-page application in your browser, the browser will f
 
 When you visit a website which uses SSR, the browser will fire a request, but, unlike with SPAs, the response contains all you need -- JavaScript files, HTML content *and* your data. **There are no spinners, skeletons -- no elements jumping around. The content is delivered faster, the time to the first paint improves.**
 
-However, like with every other tool, it might be an overkill for your usecase. Think about if improving your page load by a couple of hundreds milliseconds is worth it. **It might be crucial in for e-commerce sites (which are in an extremely competitive** environment), **but might be an overkill for application which are only usable after loggin in**
+However, like with every other tool, it might be an overkill for your use-case. Think about if improving your page load by some hundreds of milliseconds is worth it. **It might be crucial in for e-commerce sites (which are in an extremely competitive** environment), **but might be an overkill for application which are only usable after logging in**
 
-> With the growing popularity of the [JAM Stack](https://jamstack.org/), you can get similar benefits (even better) in terms of speed for pages which don't require to be highly dynamic -- blogs, marketing sites or even some e-ccomerce sites.
+> With the growing popularity of the [JAM Stack](https://jamstack.org/), you can get similar benefits (even better) in terms of speed for pages which don't require to be highly dynamic -- blogs, marketing sites or even some e-commerce sites.
 
 
 
 ### Better for SEO (controversial 🧐)
 I've seen the SEO argument being used countless times, but frankly, I don't believe it is such a big deal. Let's first clarify why some people even make the claim that it's a big deal.
 
-The way Google (and other) crawlers (which are scraping your website to display it in the search results) has *traditionally* worked is following: Visit a website, read the HTML delivered from the server/CDN, save it. Problems arised as libraries like React or Vue came into existence. As described in [the previous blog post](https://dev.to/tomdohnal/migrating-to-ssr-next-js-part-1-3-what-is-ssr-and-how-it-differs-from-other-approaches-50fa), almost no HTML is received in the first response from the server/CDN. It's only after the necessary part of JavaScript gets executed that you can see some meaningful content.
+The way Google (and other) crawlers (which are scraping your website to display it in the search results) has *traditionally* worked is following: Visit a website, read the HTML delivered from the server/CDN, save it. Problems arose as libraries like React or Vue came into existence. As described in [the previous blog post](https://dev.to/tomdohnal/migrating-to-ssr-next-js-part-1-3-what-is-ssr-and-how-it-differs-from-other-approaches-50fa), almost no HTML is received in the first response from the server/CDN. It's only after the necessary part of JavaScript gets executed that you can see some meaningful content.
 
  **And that's the root of the SEO problem -- crawlers would only see the one div or a spinner and wouldn't wait for the actual content to show up. Therefore, your page wouldn't get properly indexed. However, this is no longer the case with the Google crawler as it waits for all the content to load up.** 
 
@@ -27,21 +28,19 @@ Where it might still be *necessary* is when you want to get a nice preview of yo
 
 ## What are the cons of SSR? 👎🏻
 ### The need for a server
-As opposed to the "traditional" SPAs where you don't even *need* a server to run your code, you need one in order to render the code on the server (it's called *server* side rendering after all...). What this means is that you have to pay for a server to execute your React.js code. If you already have a server, the resource consumption might go up. 
+As opposed to the "traditional" SPAs where you don't even *need* a server to run your code, you need one to render the code on the server (it's called *server* side rendering after all...). What this means is that you have to pay for a server to execute your React.js code. If you already have a server, the resource consumption might go up. 
 
-What can you do about it? Well, think about if SSR is the right solution for your usecase. You might be better of leveriging JAM Stack or a traditional SPA can be just enough for your usecase. Or, with the [new 9.3 Next.js release](https://nextjs.org/blog/next-9-3), you can easily combine SSR with static pages which prevents wasting server resources.
+What can you do about it? Well, think about if SSR is the right solution for your use-case. You might be better of leveraging JAM Stack or a traditional SPA can be just enough for your use-case. Or, with the [new 9.3 Next.js release](https://nextjs.org/blog/next-9-3), you can easily combine SSR with static pages which prevent wasting server resources.
 
 ### It's harder for the development (sometimes)
-If you were to roll your own SSR solution, you might be surprised that it's not as straightforward as creating a "traditional" SPA. If you think about it -- it makes sense. You have to take care to rendering the components to HTML, sending them to the browser, [hydration](https://reactjs.org/docs/react-dom.html#hydrate), making sure that you can fetch the data both on the server and the client...
+If you were to roll your own SSR solution, you might be surprised that it's not as straightforward as creating a "traditional" SPA. If you think about it -- it makes sense. You have to take care of rendering the components to HTML, sending them to the browser, [hydration](https://reactjs.org/docs/react-dom.html#hydrate), making sure that you can fetch the data both on the server and the client...
 
-Of course, if you use frameworks like Next.js or Nuxt.js, they abstract lot of these pain points so that you don't have to worry about them. However, for larger projects which want to start using SSR or which were using SSR before these frameworks existed, the migration process to such a framework might seem daunting and they still need to implement everything by themselves. 
+Of course, if you use frameworks like Next.js or Nuxt.js, they abstract a lot of these pain points so that you don't have to worry about them. However, for larger projects which want to start using SSR or which were using SSR before these frameworks existed, the migration process to such a framework might seem daunting and they still need to implement everything by themselves. 
 
 ## Summary
-In this blog posts, we explored which applications benefit from using SSR and what are the potential downsides. My personal view is that the need for SSR gradually decreases. Especially, it's really easy to use statically generated sites with [the newest edition of Next.js](https://nextjs.org/blog/next-9-3). Nonetheles, valid use-cases still remain and if you want learn more about how to create a SSR app, hit the subscribe button and wait a week or two for my next blog post. 
-
-> Written with [StackEdit](https://stackedit.io/).
+In this blog posts, we explored which applications benefit from using SSR and what are the potential downsides. My personal view is that the need for SSR gradually decreases. Especially, it's really easy to use statically generated sites with [the newest edition of Next.js](https://nextjs.org/blog/next-9-3). Nonetheless, valid use-cases still remain and if you want to learn more about how to create an SSR app, hit the subscribe button and wait a week or two for my next blog post. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjY4MDQwODIsLTE3MTcyMjExMzksMz
-Y5ODIwODU5LDEyNDQzNzk4NjAsLTExMDM4Mzc2NzUsLTEyMzM1
-MzQxMzksMTM1Nzk0NjY0OV19
+eyJoaXN0b3J5IjpbLTIwOTM4MDQ1MjIsLTExMjY4MDQwODIsLT
+E3MTcyMjExMzksMzY5ODIwODU5LDEyNDQzNzk4NjAsLTExMDM4
+Mzc2NzUsLTEyMzM1MzQxMzksMTM1Nzk0NjY0OV19
 -->
