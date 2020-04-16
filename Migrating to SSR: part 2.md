@@ -1,14 +1,14 @@
 
 # Migrating to SSR (Next.js) - part 2/3: IS IT EVEN WORTH IT? 💎
-In this edition of the **migrating React app to server-side rendering (Next.js) mini-series** we'll explore the pros and cons of server-side rendering as opposed to "client-only" single-page apps (and statically generated sites). We'll go through the UX 📱, business 🧳, and product development perspectives. **You'll learn when you should opt for server-side rendering, when statically generated sites are a better choice, and under which circumstances you'll be better off with a "basic" SPA.**
+In this edition of the **migrating React app to server-side rendering (Next.js) mini-series** we'll explore the pros and cons of server-side rendering as opposed to "client-only" single-page apps (and statically generated sites). We'll go through the UX 📱, business 🧳, and product development 👩🏿‍💻perspectives. **You'll learn when you should opt for server-side rendering, when statically generated sites are a better choice, and under which circumstances you'll be better off with a "basic" SPA.**
 
 ## What are the pros of SSR? 👍🏽
 ### Improved UX/Speed 🏎
 The first argument which favours using SSR is the improved page speed. 
 
-If you navigate to a single-page application in your browser, the browser will first fire a request to download the HTML and JavaScript, and only after the JavaScript is downloaded and evaluated, it can fire an additional request to fetch some data from your API. Meanwhile, the user is presented with a blank screen, spinner or skeleton. 
+If you navigate to a single-page application in your browser, the browser will first fire a request to download the HTML and JavaScript, and only after the JavaScript is downloaded and evaluated, it can fire an additional request to fetch some data from your API. Meanwhile, the user is presented with a blank screen, spinner or skeleton 💀. 
 
-When you visit a website which uses SSR, the browser will fire a request, but, unlike with the SPAs, the response contains all you need -- JavaScript files, HTML content *and* your data. **There are no spinners, skeletons -- no elements jumping around. The content is delivered faster and the time to the first paint improves.**
+When you visit a website which uses SSR, the browser will fire a request, but, unlike with the SPAs, the response contains all you need -- JavaScript files, HTML content *and* your data. **There are no spinners, skeletons -- no elements jumping around . The content is delivered faster and the time to the first paint improves.**
 
 However, like with every tool, it might be an overkill for your use-case. Think about if improving your page load by some hundreds of milliseconds is worth it. **It might be crucial in for e-commerce sites** (which are in an extremely competitive environment), **but might be an overkill for application which are only usable after logging in**
 
@@ -45,8 +45,8 @@ Of course, if you use frameworks like Next.js or Nuxt.js, they abstract a lot of
 ## Summary
 In this blog posts, we explored which applications benefit from using SSR and what are the potential downsides. My personal view is that the need for SSR gradually decreases 📉. Especially, it's really easy to use statically generated sites with [the newest edition of Next.js](https://nextjs.org/blog/next-9-3). Nonetheless, valid use-cases still remain and if you want to learn more about how to create an SSR app, hit 🥊 the subscribe button and wait a week or two for my next blog post. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTMzNzQ0LC0yMDkzODA0NTIyLC0xMT
-I2ODA0MDgyLC0xNzE3MjIxMTM5LDM2OTgyMDg1OSwxMjQ0Mzc5
-ODYwLC0xMTAzODM3Njc1LC0xMjMzNTM0MTM5LDEzNTc5NDY2ND
-ldfQ==
+eyJoaXN0b3J5IjpbMTYzODA5OTI2MSwtMjA5MzgwNDUyMiwtMT
+EyNjgwNDA4MiwtMTcxNzIyMTEzOSwzNjk4MjA4NTksMTI0NDM3
+OTg2MCwtMTEwMzgzNzY3NSwtMTIzMzUzNDEzOSwxMzU3OTQ2Nj
+Q5XX0=
 -->
