@@ -40,13 +40,13 @@ What can you do about it? Well, think about if SSR is the right solution for you
 ### It's harder for the development (sometimes) 😵
 If you were to roll your own SSR solution, you might be surprised that it's not as straightforward as creating a "traditional" SPA. You have to take care of rendering the components to HTML, sending them to the browser, [hydration](https://reactjs.org/docs/react-dom.html#hydrate), making sure that you can fetch the data both on the server and the client...
 
-Of course, if you use frameworks like Next.js or Nuxt.js, they abstract a lot of these pain points away so you don't have to worry about them. However, for larger projects which want to start using SSR or which were using SSR before these frameworks existed, the migration process to such a framework might seem daunting and they  need to implement everything by themselves. 
+Of course, if you use frameworks like Next.js or Nuxt.js, they abstract a lot of these pain points away so you don't have to worry about them. However, for larger projects which want to start using SSR or which were using SSR before these frameworks existed, the migration process to such a framework might seem daunting and they need to implement SSR by themselves. 
 
 ## Summary
 In this blog posts, we explored which applications benefit from using SSR and what are the potential downsides. My personal view is that the need for SSR gradually decreases. Especially, it's really easy to use statically generated sites with [the newest edition of Next.js](https://nextjs.org/blog/next-9-3). Nonetheless, valid use-cases still remain and if you want to learn more about how to create an SSR app, hit the subscribe button and wait a week or two for my next blog post. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDgzMjc2NywtMjA5MzgwNDUyMiwtMT
-EyNjgwNDA4MiwtMTcxNzIyMTEzOSwzNjk4MjA4NTksMTI0NDM3
-OTg2MCwtMTEwMzgzNzY3NSwtMTIzMzUzNDEzOSwxMzU3OTQ2Nj
-Q5XX0=
+eyJoaXN0b3J5IjpbLTEzMTAzMjAzMzgsLTIwOTM4MDQ1MjIsLT
+ExMjY4MDQwODIsLTE3MTcyMjExMzksMzY5ODIwODU5LDEyNDQz
+Nzk4NjAsLTExMDM4Mzc2NzUsLTEyMzM1MzQxMzksMTM1Nzk0Nj
+Y0OV19
 -->
