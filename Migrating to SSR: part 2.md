@@ -8,7 +8,7 @@ The first argument which favours using SSR is the improved page speed.
 
 If you navigate to a single-page application in your browser, the browser will first fire a request to download the HTML and JavaScript, and only after the JavaScript is downloaded and evaluated, it can fire an additional request to fetch some data from your API. Meanwhile, the user is presented with a blank screen, spinner or skeleton 💀. 
 
-When you visit a website which uses SSR, the browser will fire a request, but, unlike with the SPAs, the response contains all you need -- JavaScript files, HTML content *and* your data. **There are no spinners, skeletons -- no elements jumping around . The content is delivered faster and the time to the first paint improves.**
+When you visit a website which uses SSR, the browser will fire a request, but, unlike with the SPAs, the response contains all you need -- JavaScript files, HTML content *and* your data. **There are no spinners, skeletons -- no elements jumping around 🤸🏽‍♂️. The content is delivered faster and the time to the first paint improves.**
 
 However, like with every tool, it might be an overkill for your use-case. Think about if improving your page load by some hundreds of milliseconds is worth it. **It might be crucial in for e-commerce sites** (which are in an extremely competitive environment), **but might be an overkill for application which are only usable after logging in**
 
@@ -19,7 +19,7 @@ However, like with every tool, it might be an overkill for your use-case. Think 
 ### Better for SEO (controversial 🧐)
 I've seen the SEO argument being used countless times, but frankly, I don't believe it is such a big deal all the time. Let's first clarify why some people claim it to be a big deal.
 
-The way Google (and other) crawlers (which are scraping your website to display it in the search results) has *traditionally* worked is following:
+The way Google (and other) crawlers 🦎 (which are scraping your website to display it in the search results) has *traditionally* worked is following:
 1) Visit a website
 2) Read the HTML delivered from the server/CDN
 3) Save it.
@@ -45,7 +45,7 @@ Of course, if you use frameworks like Next.js or Nuxt.js, they abstract a lot of
 ## Summary
 In this blog posts, we explored which applications benefit from using SSR and what are the potential downsides. My personal view is that the need for SSR gradually decreases 📉. Especially, it's really easy to use statically generated sites with [the newest edition of Next.js](https://nextjs.org/blog/next-9-3). Nonetheless, valid use-cases still remain and if you want to learn more about how to create an SSR app, hit 🥊 the subscribe button and wait a week or two for my next blog post. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzODA5OTI2MSwtMjA5MzgwNDUyMiwtMT
+eyJoaXN0b3J5IjpbMTI3Mjc2MzgwNiwtMjA5MzgwNDUyMiwtMT
 EyNjgwNDA4MiwtMTcxNzIyMTEzOSwzNjk4MjA4NTksMTI0NDM3
 OTg2MCwtMTEwMzgzNzY3NSwtMTIzMzUzNDEzOSwxMzU3OTQ2Nj
 Q5XX0=
