@@ -33,9 +33,9 @@ Where it might still be *necessary* is if you want to get a preview of your page
 
 ## What are the cons of SSR? 👎🏻
 ### The need for a server 🖱
-As opposed to the "traditional" SPAs where you don't even *need* a server to run your code, you need one to render the code on the server (it's called *server* side rendering after all...). What this means is that you have to pay for a server to execute your React.js code. If you already have a server, the resource consumption might go up. 
+As opposed to the "traditional" SPAs where you don't even *need* a server to run your code, **you need a server to render the code on the server (it's called *server* side rendering after all...). What this means is that you have to pay for a server to execute your "front-end" code.** If you already have a server, the resource consumption might go up. 
 
-What can you do about it? Well, think about if SSR is the right solution for your use-case. You might be better of leveraging JAM Stack or a traditional SPA can be just enough for your use-case. Or, with the [new 9.3 Next.js release](https://nextjs.org/blog/next-9-3), you can easily combine SSR with static pages which prevent wasting server resources.
+What can you do about it? Well, think about if SSR is the right solution for your use-case. You might be better off leveraging JAM Stack or a traditional SPA can be just enough for your use-case. Or, with the [new 9.3 Next.js release](https://nextjs.org/blog/next-9-3), you can easily combine SSR with static pages which prevent wasting server resources.
 
 ### It's harder for the development (sometimes)
 If you were to roll your own SSR solution, you might be surprised that it's not as straightforward as creating a "traditional" SPA. If you think about it -- it makes sense. You have to take care of rendering the components to HTML, sending them to the browser, [hydration](https://reactjs.org/docs/react-dom.html#hydrate), making sure that you can fetch the data both on the server and the client...
@@ -45,7 +45,7 @@ Of course, if you use frameworks like Next.js or Nuxt.js, they abstract a lot of
 ## Summary
 In this blog posts, we explored which applications benefit from using SSR and what are the potential downsides. My personal view is that the need for SSR gradually decreases. Especially, it's really easy to use statically generated sites with [the newest edition of Next.js](https://nextjs.org/blog/next-9-3). Nonetheless, valid use-cases still remain and if you want to learn more about how to create an SSR app, hit the subscribe button and wait a week or two for my next blog post. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODMyMDc5MSwtMjA5MzgwNDUyMiwtMT
+eyJoaXN0b3J5IjpbMTkzMTczMzMzMiwtMjA5MzgwNDUyMiwtMT
 EyNjgwNDA4MiwtMTcxNzIyMTEzOSwzNjk4MjA4NTksMTI0NDM3
 OTg2MCwtMTEwMzgzNzY3NSwtMTIzMzUzNDEzOSwxMzU3OTQ2Nj
 Q5XX0=
